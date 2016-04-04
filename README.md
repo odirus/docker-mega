@@ -16,7 +16,7 @@ docker build --no-cache -t odirus/docker-mega .
 ## 运行Docker容器
 ```
 #"odirus/docker-mega"是可以替换的，与上一步一致
-ocker run -v /root/docker-mega/mega-downloads:/root/mega-downloads odirus/docker-mega
+docker run -v /root/docker-mega/mega-downloads:/root/mega-downloads odirus/docker-mega
 ```
 ## 相关解释
 现在容器内部已经建立目录 "/root/mega-downloads"，并且与宿主中当前目录下的"mega-downloads"目录对应，相当于共享文件夹，容器中此目录下载的文件会与宿主共享。
